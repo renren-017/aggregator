@@ -75,6 +75,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "podcasts",
+    "django_apscheduler",
     "content_aggregator.users",
     # Your stuff: custom apps go here
 ]
@@ -243,9 +244,7 @@ LOGGING = {
     },
     "handlers": {
         "console": {
-            "level": "DEBUG",
             "class": "logging.StreamHandler",
-            "formatter": "verbose",
         }
     },
     "root": {"level": "INFO", "handlers": ["console"]},
